@@ -146,7 +146,7 @@ main {
   flex-direction: column;
   align-items: center;
   h3 {
-    margin: 0% 0% 0% 0%;
+    margin: 0% 13% 0% 15%;
     padding: 0% 0% 0% 0%;
   }
   h2 {
@@ -180,6 +180,27 @@ main {
 .hand {
   position: absolute;
   left: 0%;
+}
+.info {
+  p {
+    font-size: 0px;
+  }
+  .fa-circle-info {
+    font-size: 35px;
+    color: white;
+  }
+  &:hover {
+    width: 100%;
+    height: 30%;
+    p{
+      font-size: 18px;
+      line-height: 25px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.144);
+    }
+  }
 }
 
 .container {
