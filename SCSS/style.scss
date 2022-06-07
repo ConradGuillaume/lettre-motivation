@@ -1,0 +1,245 @@
+@import "./utils/Keyframes.scss";
+@import "./utils/mixin.scss";
+a:visited {
+  color: black;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+header {
+  background: url(/images/food2.jpg);
+  background-size: cover;
+  width: 100%;
+  i {
+    border-radius: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 25px;
+    color: rgb(139, 16, 240);
+  }
+  .sender {
+    padding-top: 15px;
+    h1 {
+      @include sender;
+      @include boxshade;
+      font-size: 21px;
+      width: 292px;
+      margin-bottom: 15px;
+      &:hover {
+        animation: backcolor 2s forwards;
+        .sender__logo {
+          animation: slideright 2s forwards;
+        }
+      }
+    }
+    .sender__logo {
+      @include senderlogo;
+      cursor: pointer;
+    }
+  }
+  .sender__mail {
+    @include sender;
+    @include boxshade;
+    margin-bottom: 13px;
+    width: 418px;
+    font-size: 13px;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+    &:hover {
+      animation: backcolor 2s forwards;
+      .sender__logo {
+        animation: slideright1 3s forwards;
+      }
+    }
+  }
+  .sender__phone {
+    @include sender;
+    @include boxshade;
+    width: 215px;
+    font-weight: bold;
+    p {
+      margin: 0%;
+    }
+    &:hover {
+      animation: backcolor 2s forwards;
+      .sender__logo {
+        animation: slideright2 2s forwards;
+      }
+    }
+  }
+  .recever {
+    display: flex;
+    justify-content: flex-end;
+    p {
+      background-color: black;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      margin: 0%;
+      z-index: 3;
+    }
+    .border {
+      background: white;
+      margin-right: 0.5%;
+      margin-bottom: 1%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 110px;
+      width: 282px;
+      &:hover {
+        .stick1 {
+          background-color: black;
+          border: solid;
+          position: absolute;
+          bottom: 0%;
+          left: 0%;
+          height: 55px;
+          width: 141px;
+          z-index: 1;
+          animation: swapright 1s forwards;
+        }
+        .stick2 {
+          background-color: black;
+          border: solid;
+          position: absolute;
+          top: 0%;
+          right: 0%;
+          height: 55px;
+          width: 141px;
+          z-index: 1;
+          animation: swapleft 1s forwards;
+        }
+      }
+    }
+  }
+}
+
+main {
+  border: solid;
+  margin: 0%;
+  padding: 0%;
+  .bloc__text {
+    width: 80%;
+  }
+  article {
+    display: flex;
+    padding: 0% 0% 0% 0%;
+  }
+  .text {
+    border: solid;
+  }
+}
+
+.aside__block {
+  background: url(https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045379_960_720.jpg)
+    center/cover;
+  border: solid;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+  }
+  h2 {
+    width: 100%;
+    margin-bottom: 20%;
+  }
+  .projet__1 {
+    @include boxshade;
+    @include backcolor;
+    @include projet;
+  }
+  .projet__2 {
+    @include boxshade;
+    @include backcolor;
+    @include projet;
+  }
+  .projet__3 {
+    @include boxshade;
+    @include backcolor;
+    @include projet;
+  }
+  .aside__buttle {
+    width: 100%;
+    .btle {
+      width: 35px;
+      margin-left: 5%;
+      z-index: 8;
+    }
+  }
+}
+.hand {
+  position: absolute;
+  left: 0%;
+}
+
+.container {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.content {
+  margin-top: 10%;
+  position: relative;
+  width: 100%;
+}
+.content h2 {
+  font-size: 35px;
+  @include backcolor;
+  margin: 0%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 25px;
+}
+.content h2:nth-child(1) {
+  position: absolute;
+  bottom: 0%;
+}
+.content h2:nth-child(2) {
+  background: #ac1e44;
+  animation: animate 4s ease-in-out;
+  animation-iteration-count: 5;
+}
+.btle {
+  .btle__logo {
+    position: absolute;
+    width: 35px;
+    top: 250px;
+    right: 2%;
+    animation: servir 5s forwards;
+  }
+}
+.bloc__text {
+  h1 {
+    .underline {
+      width: 210px;
+      height: 3px;
+      background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+    }
+    &:hover {
+      .underline {
+        width: 210px;
+        display: flex;
+        align-items: center;
+        height: 3px;
+        background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+        .underline__moove {
+          height: 3px;
+          width: 10%;
+          background-image: linear-gradient(135deg, #f55555 10%, #fccf31 100%);
+          animation: underline 2s infinite;
+        }
+      }
+    }
+  }
+}

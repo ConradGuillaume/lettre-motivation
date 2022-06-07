@@ -1,0 +1,112 @@
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      1% 43%,
+      14% 41%,
+      30% 48%,
+      47% 56%,
+      69% 61%,
+      87% 54%,
+      100% 46%,
+      100% 100%,
+      1% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      1% 60%,
+      17% 65%,
+      34% 66%,
+      50% 61%,
+      63% 49%,
+      79% 40%,
+      99% 36%,
+      100% 99%,
+      0% 100%
+    );
+  }
+}
+
+@keyframes servir {
+  0% {
+    transform: rotate(-130deg);
+    opacity: 2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes disapear {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes slideright {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(234px, 0px);
+  }
+}
+@keyframes slideright1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(360px, 0px);
+  }
+}
+@keyframes slideright2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(157px, 0px);
+  }
+}
+
+@keyframes backcolor {
+  0% {
+    background: white;
+    color: black;
+  }
+  100% {
+    background: #000000;
+    color: cyan;
+  }
+}
+@keyframes underline {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(200px, 0px);
+  }
+}
+@keyframes swapright {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(135px);
+  }
+}
+@keyframes swapleft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-135px);
+  }
+}
