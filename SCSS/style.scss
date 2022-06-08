@@ -161,6 +161,13 @@ main {
     font-weight: bold;
     color: #000000;
   }
+  .tablette{
+    @media (max-width: $breakpoint-tablet){
+      display: block;
+      font-size: 22px;
+    }
+    display: none;
+  }
 }
 
 .aside__block {
@@ -342,9 +349,8 @@ main {
 footer {
   padding-left: 1%;
   h3 {
-    @media (max-width: $breakpoint-tablet){
-      position: absolute;
-      top: 1090px;
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
     }
     color: white;
     padding-left: 1%;
