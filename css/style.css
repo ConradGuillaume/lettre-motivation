@@ -378,6 +378,12 @@ header .sender__mail h2 {
   margin: 0;
 }
 
+@media (max-width: 420px) {
+  header .sender__mail h2 {
+    font-size: 17px;
+  }
+}
+
 header .sender__mail:hover {
   -webkit-animation: backcolor 2s forwards;
           animation: backcolor 2s forwards;
