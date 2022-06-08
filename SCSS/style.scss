@@ -95,6 +95,9 @@ header {
     }
   }
   .recever {
+    @media (max-width: $breakpoint-mobile) {
+      margin-bottom: 5%;
+    }
     display: flex;
     justify-content: flex-end;
     p {

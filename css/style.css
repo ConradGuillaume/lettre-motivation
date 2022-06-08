@@ -452,6 +452,12 @@ header .recever {
           justify-content: flex-end;
 }
 
+@media (max-width: 420px) {
+  header .recever {
+    margin-bottom: 5%;
+  }
+}
+
 header .recever p {
   background-color: black;
   color: white;
