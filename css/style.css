@@ -362,6 +362,12 @@ header .sender__mail {
   font-size: 13px;
 }
 
+@media (max-width: 890px) {
+  header .sender__mail {
+    width: 360px;
+  }
+}
+
 header .sender__mail h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,9 +383,23 @@ header .sender__mail:hover {
           animation: backcolor 2s forwards;
 }
 
+@media (max-width: 890px) {
+  header .sender__mail:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 header .sender__mail:hover .sender__logo {
   -webkit-animation: slideright1 3s forwards;
           animation: slideright1 3s forwards;
+}
+
+@media (max-width: 890px) {
+  header .sender__mail:hover .sender__logo {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 header .sender__phone {

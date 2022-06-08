@@ -50,6 +50,9 @@ header {
     }
   }
   .sender__mail {
+    @media (max-width: $breakpoint-tablet) {
+      width: 360px;
+    }
     @include sender;
     @include boxshade;
     margin-bottom: 13px;
@@ -61,8 +64,14 @@ header {
       margin: 0;
     }
     &:hover {
+      @media (max-width: $breakpoint-tablet) {
+        animation: none;
+      }
       animation: backcolor 2s forwards;
       .sender__logo {
+        @media (max-width: $breakpoint-tablet) {
+          animation: none;
+        }
         animation: slideright1 3s forwards;
       }
     }
@@ -161,8 +170,8 @@ main {
     font-weight: bold;
     color: #000000;
   }
-  .tablette{
-    @media (max-width: $breakpoint-tablet){
+  .tablette {
+    @media (max-width: $breakpoint-tablet) {
       display: block;
       font-size: 22px;
     }
