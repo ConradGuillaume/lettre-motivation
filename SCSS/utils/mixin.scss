@@ -1,9 +1,13 @@
 @mixin sender {
-  border: 1px solid rgb(0, 0, 0);
   display: flex;
   justify-content: start;
   align-items: center;
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  background: linear-gradient(
+    162deg,
+    rgba(145, 34, 15, 1) 14%,
+    rgb(122, 114, 111) 57%,
+    rgba(253, 61, 22, 1) 88%
+  );
   border-radius: 25px;
   height: 35px;
 }
@@ -23,15 +27,20 @@
 }
 
 @mixin backcolor {
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
-  border: inset 2px rgb(172, 172, 172);
+  background: linear-gradient(
+    162deg,
+    rgba(145, 34, 15, 1) 14%,
+    rgb(122, 114, 111) 57%,
+    rgba(253, 61, 22, 1) 88%
+  );
+  border: inset 2px rgb(252, 252, 252);
 }
 
 @mixin projet {
   position: relative;
   width: 80%;
-  height: 15%;
-  margin: 8%;
+  height: 12%;
+  margin-top: 6%;
   display: flex;
   align-items: center;
   justify-content: center;

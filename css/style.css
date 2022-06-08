@@ -226,17 +226,44 @@
   }
 }
 
+@-webkit-keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
 a:visited {
   color: black;
 }
 
 body {
+  background: url(../images/pexels-william-choquette-2641886.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0%;
   padding: 0%;
 }
 
 header {
-  background: url(../images/food2.jpg);
   background-size: cover;
   width: 100%;
 }
@@ -251,10 +278,11 @@ header i {
 
 header .sender {
   padding-top: 15px;
+  padding-left: 1%;
+  width: 35%;
 }
 
 header .sender h1 {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,8 +292,7 @@ header .sender h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebbba7), to(#cfc7f8));
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
   border-radius: 25px;
   height: 35px;
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
@@ -303,7 +330,6 @@ header .sender .sender__logo {
 }
 
 header .sender__mail {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,8 +339,7 @@ header .sender__mail {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebbba7), to(#cfc7f8));
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
   border-radius: 25px;
   height: 35px;
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
@@ -345,7 +370,6 @@ header .sender__mail:hover .sender__logo {
 }
 
 header .sender__phone {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,8 +379,7 @@ header .sender__phone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebbba7), to(#cfc7f8));
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
   border-radius: 25px;
   height: 35px;
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
@@ -399,7 +422,7 @@ header .recever p {
 
 header .recever .border {
   background: white;
-  margin-right: 0.5%;
+  margin-right: 3%;
   margin-bottom: 1%;
   position: relative;
   display: -webkit-box;
@@ -461,10 +484,10 @@ main .text {
   font-size: 19px;
   font-family: "roboto";
   font-weight: bold;
+  color: #000000;
 }
 
 .aside__block {
-  background: url(https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045379_960_720.jpg) center/cover;
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,6 +500,8 @@ main .text {
       -ms-flex-align: center;
           align-items: center;
   font-family: "roboto";
+  background: rgba(255, 255, 255, 0.699);
+  border-radius: 40px;
 }
 
 .aside__block h3 {
@@ -492,13 +517,12 @@ main .text {
 .aside__block .projet__1 {
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
           box-shadow: 6px 6px 14px 1px #000000;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebbba7), to(#cfc7f8));
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
-  border: inset 2px #acacac;
+  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  border: inset 2px #fcfcfc;
   position: relative;
   width: 80%;
-  height: 15%;
-  margin: 8%;
+  height: 12%;
+  margin-top: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,13 +541,12 @@ main .text {
 .aside__block .projet__2 {
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
           box-shadow: 6px 6px 14px 1px #000000;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebbba7), to(#cfc7f8));
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
-  border: inset 2px #acacac;
+  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  border: inset 2px #fcfcfc;
   position: relative;
   width: 80%;
-  height: 15%;
-  margin: 8%;
+  height: 12%;
+  margin-top: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,13 +565,12 @@ main .text {
 .aside__block .projet__3 {
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
           box-shadow: 6px 6px 14px 1px #000000;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebbba7), to(#cfc7f8));
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
-  border: inset 2px #acacac;
+  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  border: inset 2px #fcfcfc;
   position: relative;
   width: 80%;
-  height: 15%;
-  margin: 8%;
+  height: 12%;
+  margin-top: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,13 +601,27 @@ main .text {
   left: 0%;
 }
 
+.info {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .info p {
   font-size: 0px;
 }
 
 .info .fa-circle-info {
+  bottom: 0%;
   font-size: 35px;
-  color: white;
+  color: black;
 }
 
 .info:hover {
@@ -594,12 +630,21 @@ main .text {
 }
 
 .info:hover p {
+  -webkit-animation: apear 5s forwards;
+          animation: apear 5s forwards;
+  margin-bottom: 15%;
   font-size: 18px;
   line-height: 25px;
-  color: white;
+  width: 100%;
+  color: black;
   font-weight: bold;
   text-align: center;
-  background: rgba(255, 255, 255, 0.144);
+  border-radius: 90px;
+  background: rgba(0, 0, 0, 0.363);
+}
+
+.info:hover .fa-circle-info {
+  display: none;
 }
 
 .container {
@@ -621,9 +666,7 @@ main .text {
 
 .content h2 {
   font-size: 35px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ebbba7), to(#cfc7f8));
-  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
-  border: inset 2px #acacac;
+  border: inset 2px #fcfcfc;
   margin: 0%;
   padding-left: 2%;
   padding-right: 2%;
@@ -652,13 +695,20 @@ main .text {
           animation: servir 5s forwards;
 }
 
-.bloc__text h1 .underline {
+.bloc__text {
+  background: rgba(255, 255, 255, 0.699);
+  border-radius: 40px;
+  padding-left: 1%;
+  margin-right: 5%;
+}
+
+.bloc__text .underline {
   width: 210px;
   height: 3px;
   background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
 }
 
-.bloc__text h1:hover .underline {
+.bloc__text:hover .underline {
   width: 210px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -670,7 +720,7 @@ main .text {
   background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
 }
 
-.bloc__text h1:hover .underline .underline__moove {
+.bloc__text:hover .underline .underline__moove {
   height: 3px;
   width: 10%;
   background-image: linear-gradient(135deg, #f55555 10%, #fccf31 100%);
@@ -682,8 +732,15 @@ main .text {
   font-size: 19px;
   font-family: "roboto";
   font-weight: bold;
+  color: black;
 }
 
 footer {
   padding-left: 1%;
+}
+
+footer h3 {
+  color: white;
+  padding-left: 1%;
+  font-size: 25px;
 }
