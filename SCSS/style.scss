@@ -141,20 +141,20 @@ header {
 }
 
 main {
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: $breakpoint-desktop) {
     padding: 0%;
   }
   margin: 0%;
   padding-left: 1%;
   .bloc__text {
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-desktop) {
       margin: 0%;
       width: 100%;
     }
     width: 75%;
   }
   article {
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-desktop) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -180,9 +180,10 @@ main {
 }
 
 .aside__block {
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: $breakpoint-desktop) {
     width: 80%;
     margin-top: 10%;
+    margin-bottom: 5%;
   }
   width: 25%;
   display: flex;
@@ -300,7 +301,7 @@ main {
 }
 .btle {
   .btle__logo {
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-desktop) {
       display: none;
     }
     position: absolute;

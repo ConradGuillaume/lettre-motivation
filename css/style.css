@@ -504,7 +504,7 @@ main {
   padding-left: 1%;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1250px) {
   main {
     padding: 0%;
   }
@@ -514,7 +514,7 @@ main .bloc__text {
   width: 75%;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1250px) {
   main .bloc__text {
     margin: 0%;
     width: 100%;
@@ -528,7 +528,7 @@ main article {
   padding: 0% 0% 0% 0%;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1250px) {
   main article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -581,10 +581,11 @@ main .tablette {
   border-radius: 40px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1250px) {
   .aside__block {
     width: 80%;
     margin-top: 10%;
+    margin-bottom: 5%;
   }
 }
 
@@ -794,7 +795,7 @@ main .tablette {
           animation: servir 5s forwards;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1250px) {
   .btle .btle__logo {
     display: none;
   }
