@@ -28,6 +28,9 @@ header {
     @media (max-width: $breakpoint-tablet) {
       margin-bottom: 5%;
     }
+    @media (max-width: $breakpoint-mobile) {
+      margin-bottom: 25%;
+    }
     padding-top: 15px;
     padding-left: 1%;
     width: 35%;
@@ -96,7 +99,7 @@ header {
   }
   .recever {
     @media (max-width: $breakpoint-mobile) {
-      margin-bottom: 5%;
+      margin-bottom: 15%;
     }
     display: flex;
     justify-content: flex-end;
@@ -190,6 +193,9 @@ main {
     width: 80%;
     margin-top: 10%;
     margin-bottom: 5%;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    background: rgba(255, 255, 255, 0.911);
   }
   width: 25%;
   display: flex;
@@ -320,6 +326,9 @@ main {
 .bloc__text {
   @media (max-width: $breakpoint-tablet) {
     margin: 0%;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    background: rgba(255, 255, 255, 0.911);
   }
   background: rgba(255, 255, 255, 0.699);
   border-radius: 40px;

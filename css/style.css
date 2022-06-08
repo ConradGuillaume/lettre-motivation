@@ -291,6 +291,12 @@ header .sender {
   }
 }
 
+@media (max-width: 420px) {
+  header .sender {
+    margin-bottom: 25%;
+  }
+}
+
 header .sender h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,7 +460,7 @@ header .recever {
 
 @media (max-width: 420px) {
   header .recever {
-    margin-bottom: 5%;
+    margin-bottom: 15%;
   }
 }
 
@@ -598,6 +604,12 @@ main .tablette {
     width: 80%;
     margin-top: 10%;
     margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 420px) {
+  .aside__block {
+    background: rgba(255, 255, 255, 0.911);
   }
 }
 
@@ -823,6 +835,12 @@ main .tablette {
 @media (max-width: 890px) {
   .bloc__text {
     margin: 0%;
+  }
+}
+
+@media (max-width: 420px) {
+  .bloc__text {
+    background: rgba(255, 255, 255, 0.911);
   }
 }
 
