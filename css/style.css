@@ -623,6 +623,10 @@ main .tablette {
   cursor: pointer;
 }
 
+.aside__block .projet__1 a:visited {
+  color: black;
+}
+
 .aside__block .projet__2 {
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
           box-shadow: 6px 6px 14px 1px #000000;
@@ -648,6 +652,10 @@ main .tablette {
   cursor: pointer;
 }
 
+.aside__block .projet__2 a:visited {
+  color: black;
+}
+
 .aside__block .projet__3 {
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
           box-shadow: 6px 6px 14px 1px #000000;
@@ -671,6 +679,10 @@ main .tablette {
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
+}
+
+.aside__block .projet__3 a:visited {
+  color: black;
 }
 
 .aside__block .aside__buttle {

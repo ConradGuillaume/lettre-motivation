@@ -203,16 +203,25 @@ main {
     @include boxshade;
     @include backcolor;
     @include projet;
+    a:visited {
+      color: black;
+    }
   }
   .projet__2 {
     @include boxshade;
     @include backcolor;
     @include projet;
+    a:visited {
+      color: black;
+    }
   }
   .projet__3 {
     @include boxshade;
     @include backcolor;
     @include projet;
+    a:visited {
+      color: black;
+    }
   }
   .aside__buttle {
     width: 100%;
