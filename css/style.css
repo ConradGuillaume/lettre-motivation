@@ -140,23 +140,23 @@
 
 @-webkit-keyframes backcolor {
   0% {
-    background: white;
+    background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
     color: black;
   }
   100% {
     background: #000000;
-    color: cyan;
+    color: white;
   }
 }
 
 @keyframes backcolor {
   0% {
-    background: white;
+    background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
     color: black;
   }
   100% {
     background: #000000;
-    color: cyan;
+    color: white;
   }
 }
 
@@ -168,6 +168,7 @@
   100% {
     -webkit-transform: translate(200px, 0px);
             transform: translate(200px, 0px);
+    opacity: 0;
   }
 }
 
@@ -179,6 +180,7 @@
   100% {
     -webkit-transform: translate(200px, 0px);
             transform: translate(200px, 0px);
+    opacity: 0;
   }
 }
 
@@ -261,6 +263,7 @@ body {
   background-attachment: fixed;
   margin: 0%;
   padding: 0%;
+  width: 100%;
 }
 
 header {
@@ -273,13 +276,19 @@ header i {
   margin-right: 15px;
   margin-left: 15px;
   font-size: 25px;
-  color: #8b10f0;
+  color: #b70000;
 }
 
 header .sender {
   padding-top: 15px;
   padding-left: 1%;
   width: 35%;
+}
+
+@media (max-width: 890px) {
+  header .sender {
+    margin-bottom: 5%;
+  }
 }
 
 header .sender h1 {
@@ -292,7 +301,9 @@ header .sender h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  background-color: #6a6a68;
+  background-color: #949494;
+  background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
   border-radius: 25px;
   height: 35px;
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
@@ -325,7 +336,7 @@ header .sender .sender__logo {
           justify-content: center;
   border-radius: 25px;
   height: 35px;
-  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+  background-color: #000000;
   cursor: pointer;
 }
 
@@ -339,7 +350,9 @@ header .sender__mail {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  background-color: #6a6a68;
+  background-color: #949494;
+  background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
   border-radius: 25px;
   height: 35px;
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
@@ -379,7 +392,9 @@ header .sender__phone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  background-color: #6a6a68;
+  background-color: #949494;
+  background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
   border-radius: 25px;
   height: 35px;
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
@@ -469,8 +484,21 @@ main {
   padding-left: 1%;
 }
 
+@media (max-width: 890px) {
+  main {
+    padding: 0%;
+  }
+}
+
 main .bloc__text {
   width: 75%;
+}
+
+@media (max-width: 890px) {
+  main .bloc__text {
+    margin: 0%;
+    width: 100%;
+  }
 }
 
 main article {
@@ -478,6 +506,24 @@ main article {
   display: -ms-flexbox;
   display: flex;
   padding: 0% 0% 0% 0%;
+}
+
+@media (max-width: 890px) {
+  main article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 main .text {
@@ -504,6 +550,13 @@ main .text {
   border-radius: 40px;
 }
 
+@media (max-width: 890px) {
+  .aside__block {
+    width: 80%;
+    margin-top: 10%;
+  }
+}
+
 .aside__block h3 {
   margin: 0% 13% 0% 15%;
   padding: 0% 0% 0% 0%;
@@ -517,7 +570,8 @@ main .text {
 .aside__block .projet__1 {
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
           box-shadow: 6px 6px 14px 1px #000000;
-  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  background-color: #949494;
+  background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
   border: inset 2px #fcfcfc;
   position: relative;
   width: 80%;
@@ -541,7 +595,8 @@ main .text {
 .aside__block .projet__2 {
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
           box-shadow: 6px 6px 14px 1px #000000;
-  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  background-color: #949494;
+  background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
   border: inset 2px #fcfcfc;
   position: relative;
   width: 80%;
@@ -565,7 +620,8 @@ main .text {
 .aside__block .projet__3 {
   -webkit-box-shadow: 6px 6px 14px 1px #000000;
           box-shadow: 6px 6px 14px 1px #000000;
-  background: linear-gradient(162deg, #91220f 14%, #7a726f 57%, #fd3d16 88%);
+  background-color: #949494;
+  background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
   border: inset 2px #fcfcfc;
   position: relative;
   width: 80%;
@@ -695,6 +751,12 @@ main .text {
           animation: servir 5s forwards;
 }
 
+@media (max-width: 890px) {
+  .btle .btle__logo {
+    display: none;
+  }
+}
+
 .bloc__text {
   background: rgba(255, 255, 255, 0.699);
   border-radius: 40px;
@@ -702,10 +764,16 @@ main .text {
   margin-right: 5%;
 }
 
+@media (max-width: 890px) {
+  .bloc__text {
+    margin: 0%;
+  }
+}
+
 .bloc__text .underline {
   width: 210px;
   height: 3px;
-  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+  background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
 }
 
 .bloc__text:hover .underline {
@@ -717,13 +785,14 @@ main .text {
       -ms-flex-align: center;
           align-items: center;
   height: 3px;
-  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+  background-image: linear-gradient(150deg, #949494 72%, #b70000 86%, #890101 97%);
 }
 
 .bloc__text:hover .underline .underline__moove {
   height: 3px;
   width: 10%;
-  background-image: linear-gradient(135deg, #f55555 10%, #fccf31 100%);
+  background-color: #949494;
+  background-image: linear-gradient(150deg, #949494 48%, #b70000 57%, #890101 64%);
   -webkit-animation: underline 2s infinite;
           animation: underline 2s infinite;
 }
@@ -743,4 +812,11 @@ footer h3 {
   color: white;
   padding-left: 1%;
   font-size: 25px;
+}
+
+@media (max-width: 890px) {
+  footer h3 {
+    position: absolute;
+    top: 1090px;
+  }
 }
