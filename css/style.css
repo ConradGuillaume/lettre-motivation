@@ -731,8 +731,8 @@ main .tablette {
 .aside__block .projet__3:hover {
   -webkit-box-shadow: -12px 4px 12px 0px black;
           box-shadow: -12px 4px 12px 0px black;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
