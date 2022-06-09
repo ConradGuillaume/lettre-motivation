@@ -181,7 +181,7 @@ main {
     color: #000000;
   }
   .tablette {
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-desktop) {
       display: block;
       font-size: 22px;
     }
@@ -401,7 +401,7 @@ main {
 footer {
   padding-left: 1%;
   h3 {
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-desktop) {
       display: none;
     }
     color: white;
