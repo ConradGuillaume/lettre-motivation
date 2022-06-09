@@ -156,6 +156,7 @@ main {
   margin: 0%;
   padding-left: 1%;
   .bloc__text {
+    box-shadow: 12px 4px 12px 0px black;
     @media (max-width: $breakpoint-desktop) {
       margin: 0%;
       width: 100%;
@@ -189,6 +190,7 @@ main {
 }
 
 .aside__block {
+  box-shadow: -12px 4px 12px 0px black;
   @media (max-width: $breakpoint-desktop) {
     width: 80%;
     margin-top: 10%;
@@ -216,6 +218,11 @@ main {
     @include boxshade;
     @include backcolor;
     @include projet;
+    &:hover {
+      box-shadow: -12px 4px 12px 0px rgb(0, 0, 0);
+      transform: scale(1.01);
+      transition: all 1s ease-in-out;
+    }
     a:visited {
       color: black;
     }
@@ -224,6 +231,11 @@ main {
     @include boxshade;
     @include backcolor;
     @include projet;
+    &:hover {
+      box-shadow: -12px 4px 12px 0px rgb(0, 0, 0);
+      transform: scale(1.01);
+      transition: all 1s ease-in-out;
+    }
     a:visited {
       color: black;
     }
@@ -232,6 +244,11 @@ main {
     @include boxshade;
     @include backcolor;
     @include projet;
+    &:hover {
+      box-shadow: -12px 4px 12px 0px rgb(0, 0, 0);
+      transform: scale(1.01);
+      transition: all 1s ease-in-out;
+    }
     a:visited {
       color: black;
     }

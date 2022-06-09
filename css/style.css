@@ -529,6 +529,8 @@ main {
 }
 
 main .bloc__text {
+  -webkit-box-shadow: 12px 4px 12px 0px black;
+          box-shadow: 12px 4px 12px 0px black;
   width: 75%;
 }
 
@@ -583,6 +585,8 @@ main .tablette {
 }
 
 .aside__block {
+  -webkit-box-shadow: -12px 4px 12px 0px black;
+          box-shadow: -12px 4px 12px 0px black;
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -648,6 +652,15 @@ main .tablette {
   cursor: pointer;
 }
 
+.aside__block .projet__1:hover {
+  -webkit-box-shadow: -12px 4px 12px 0px black;
+          box-shadow: -12px 4px 12px 0px black;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .aside__block .projet__1 a:visited {
   color: black;
 }
@@ -677,6 +690,15 @@ main .tablette {
   cursor: pointer;
 }
 
+.aside__block .projet__2:hover {
+  -webkit-box-shadow: -12px 4px 12px 0px black;
+          box-shadow: -12px 4px 12px 0px black;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .aside__block .projet__2 a:visited {
   color: black;
 }
@@ -704,6 +726,15 @@ main .tablette {
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
+}
+
+.aside__block .projet__3:hover {
+  -webkit-box-shadow: -12px 4px 12px 0px black;
+          box-shadow: -12px 4px 12px 0px black;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .aside__block .projet__3 a:visited {
