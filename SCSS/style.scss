@@ -121,29 +121,29 @@ header {
       align-items: center;
       height: 110px;
       width: 282px;
-      &:hover {
-        .stick1 {
-          background-color: black;
-          border: solid;
-          position: absolute;
-          bottom: 0%;
-          left: 0%;
-          height: 55px;
-          width: 141px;
-          z-index: 1;
-          animation: swapright 1s forwards;
-        }
-        .stick2 {
-          background-color: black;
-          border: solid;
-          position: absolute;
-          top: 0%;
-          right: 0%;
-          height: 55px;
-          width: 141px;
-          z-index: 1;
-          animation: swapleft 1s forwards;
-        }
+      .stick1 {
+        background-color: black;
+        border: solid;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        height: 2px;
+        width: 141px;
+        z-index: 1;
+        animation: swapright 2s ease-in-out forwards;
+        animation-iteration-count: 3;
+      }
+      .stick2 {
+        background-color: black;
+        border: solid;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        height: 2px;
+        width: 141px;
+        z-index: 1;
+        animation: swapleft 2s ease-in-out forwards;
+        animation-iteration-count: 3;
       }
     }
   }

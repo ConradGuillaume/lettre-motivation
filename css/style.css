@@ -189,9 +189,21 @@
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+  20% {
+    -webkit-transform: translateX(135px);
+            transform: translateX(135px);
+  }
+  90% {
+    -webkit-transform: translateX(135px);
+            transform: translateX(135px);
+    height: 101px;
+    opacity: 1;
+  }
   100% {
     -webkit-transform: translateX(135px);
             transform: translateX(135px);
+    height: 101px;
+    opacity: 0;
   }
 }
 
@@ -200,9 +212,21 @@
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+  20% {
+    -webkit-transform: translateX(135px);
+            transform: translateX(135px);
+  }
+  90% {
+    -webkit-transform: translateX(135px);
+            transform: translateX(135px);
+    height: 101px;
+    opacity: 1;
+  }
   100% {
     -webkit-transform: translateX(135px);
             transform: translateX(135px);
+    height: 101px;
+    opacity: 0;
   }
 }
 
@@ -211,9 +235,21 @@
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  100% {
+  20% {
     -webkit-transform: translateX(-135px);
             transform: translateX(-135px);
+  }
+  90% {
+    height: 101px;
+    -webkit-transform: translateX(-135px);
+            transform: translateX(-135px);
+    opacity: 1;
+  }
+  100% {
+    height: 101px;
+    -webkit-transform: translateX(-135px);
+            transform: translateX(-135px);
+    opacity: 0;
   }
 }
 
@@ -222,9 +258,21 @@
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  100% {
+  20% {
     -webkit-transform: translateX(-135px);
             transform: translateX(-135px);
+  }
+  90% {
+    height: 101px;
+    -webkit-transform: translateX(-135px);
+            transform: translateX(-135px);
+    opacity: 1;
+  }
+  100% {
+    height: 101px;
+    -webkit-transform: translateX(-135px);
+            transform: translateX(-135px);
+    opacity: 0;
   }
 }
 
@@ -491,30 +539,34 @@ header .recever .border {
   width: 282px;
 }
 
-header .recever .border:hover .stick1 {
+header .recever .border .stick1 {
   background-color: black;
   border: solid;
   position: absolute;
   bottom: 0%;
   left: 0%;
-  height: 55px;
+  height: 2px;
   width: 141px;
   z-index: 1;
-  -webkit-animation: swapright 1s forwards;
-          animation: swapright 1s forwards;
+  -webkit-animation: swapright 2s ease-in-out forwards;
+          animation: swapright 2s ease-in-out forwards;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
-header .recever .border:hover .stick2 {
+header .recever .border .stick2 {
   background-color: black;
   border: solid;
   position: absolute;
   top: 0%;
   right: 0%;
-  height: 55px;
+  height: 2px;
   width: 141px;
   z-index: 1;
-  -webkit-animation: swapleft 1s forwards;
-          animation: swapleft 1s forwards;
+  -webkit-animation: swapleft 2s ease-in-out forwards;
+          animation: swapleft 2s ease-in-out forwards;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 main {
